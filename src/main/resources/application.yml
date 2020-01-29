@@ -1,0 +1,11 @@
+server:
+    port: ${SERVER_PORT:8090}
+spring:
+    application:
+        name: collector
+schedule:
+  trxFile: 
+     fixedRate: 50000  # milliseconds
+     path: C:\\maybank\\trxFile
+     fileType: .txt
+     separatorRegex: \|
